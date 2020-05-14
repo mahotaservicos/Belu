@@ -1,0 +1,5 @@
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.csproj.CoreCompileInputs.cache
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\bin\Debug\BServices.dll
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\bin\Debug\BServices.pdb
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.dll
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.pdb

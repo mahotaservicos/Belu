@@ -45,7 +45,7 @@ namespace Belutecnica
 		public bool EnviaEmail(dynamic bso, dynamic pso, dynamic objCompra, string email_to, string mensaguem, ref string str_aviso, ref string str_erro)
 		{
 			GestaoOrcamentos cls = new GestaoOrcamentos(bso, pso);
-			return (bool)cls.EnviaEmail(objCompra, email_to, mensaguem, str_aviso, str_erro);
+			return (bool)cls.EnviaEmail(objCompra, email_to, mensaguem,ref str_aviso,ref str_erro);
 		}
 
 		public bool FazVerificacaoDeFundos(dynamic bso, dynamic pso, string modulo, string tipoDoc, ref string str_aviso, ref string str_erro)
@@ -80,12 +80,12 @@ namespace Belutecnica
 		public bool ValidaAlteracoesDocumentoOriginal(dynamic bso, dynamic pso, dynamic _objCompra, ref string str_msg, ref string str_msgEmail, ref string str_aviso, ref string str_erro)
 		{
 			GestaoOrcamentos cls = new GestaoOrcamentos(bso, pso);
-			return (bool)cls.ValidaAlteracoesDocumentoOriginal(_objCompra, str_msg, str_msgEmail, str_aviso, str_erro);
+			return (bool)cls.ValidaAlteracoesDocumentoOriginal(_objCompra, ref str_msg, ref str_msgEmail,ref  str_aviso,ref str_erro);
 		}
 
 		public bool ValidaLinhasOrcamento(dynamic bso, dynamic pso, dynamic objCompra, ref string str_aviso, ref string str_erro)
 		{
-			return (bool)(new GestaoOrcamentos(bso, pso)).ValidaLinhasOrcamento(objCompra, str_aviso, str_erro);
+			return (bool)(new GestaoOrcamentos(bso, pso)).ValidaLinhasOrcamento(objCompra, ref str_aviso, ref str_erro);
 		}
 	}
 }

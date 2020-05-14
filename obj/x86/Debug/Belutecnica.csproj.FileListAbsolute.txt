@@ -1,0 +1,9 @@
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\obj\x86\Debug\Belutecnica.csprojAssemblyReference.cache
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\obj\x86\Debug\Belutecnica.csproj.CoreCompileInputs.cache
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\bin\Debug\Belutecnica.dll
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\bin\Debug\Belutecnica.pdb
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\bin\Debug\BServices.dll
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\bin\Debug\BServices.pdb
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\obj\x86\Debug\Belutecnica.csproj.CopyComplete
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\obj\x86\Debug\Belutecnica.dll
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\obj\x86\Debug\Belutecnica.pdb

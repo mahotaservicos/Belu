@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <ProjectGuid>{C82654BD-BB51-4276-9956-551316A4D8DF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <AssemblyName>BServices</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BServices</RootNamespace>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>false</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>pdbonly</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.CblBE900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.CblBE900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.ErpBS900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.ErpBS900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.GcpBE900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.GcpBE900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.ICblBS900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.IGcpBS900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.IGcpBS900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.StdBE900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.StdBE900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.StdBESql900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.StdBESql900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Interop.StdPlatBS900, Version=9.1509.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>Libs\Interop.StdPlatBS900.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="ADODB, Version=2.8.0.0, Culture=neutral, PublicKeyToken=e076e239d0e78a42">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GestaoIntranet.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\MovimentoBanco.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helpers\StringHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helpers\TDU_Email.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\Cliente.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Helpers\PrimaveraConstHelper.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\LinhaDoc.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\Banco.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GestaoAvaliacao.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\LinhasDocMorpheus.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\Tarefa.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\CabecDoc_Morpheus.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\TDU_Tipo_Tarefa.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Geral.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="GestaoOrcamentos.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\CabecDoc.cs">
+      <AutoGen>false</AutoGen>
+      <DesignTimeSharedInput>false</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\ADODB.dll" />
+    <Content Include="Libs\Interop.AdmBE900.dll" />
+    <Content Include="Libs\Interop.AdmBS900.dll" />
+    <Content Include="Libs\Interop.AdmDS900.dll" />
+    <Content Include="Libs\Interop.AdmEngine900.dll" />
+    <Content Include="Libs\Interop.AtpBE900.dll" />
+    <Content Include="Libs\Interop.BasBE900.dll" />
+    <Content Include="Libs\Interop.CblBE900.dll" />
+    <Content Include="Libs\Interop.CblCtlMovs900.dll" />
+    <Content Include="Libs\Interop.CblData900.dll" />
+    <Content Include="Libs\Interop.CnoBE900.dll" />
+    <Content Include="Libs\Interop.CollectionFactory.dll" />
+    <Content Include="Libs\Interop.COMSVCSLib.dll" />
+    <Content Include="Libs\Interop.CrmBE900.dll" />
+    <Content Include="Libs\Interop.DfpBE900.dll" />
+    <Content Include="Libs\Interop.EapBE900.dll" />
+    <Content Include="Libs\Interop.ErpBE900.dll" />
+    <Content Include="Libs\Interop.ErpBS900.dll" />
+    <Content Include="Libs\Interop.ErpDS900.dll" />
+    <Content Include="Libs\Interop.FacBE900.dll" />
+    <Content Include="Libs\Interop.FilBE900.dll" />
+    <Content Include="Libs\Interop.FilBS900.dll" />
+    <Content Include="Libs\Interop.FPSpreadADO.dll" />
+    <Content Include="Libs\Interop.GabBE900.dll" />
+    <Content Include="Libs\Interop.GcpBE900.dll" />
+    <Content Include="Libs\Interop.GprBE900.dll" />
+    <Content Include="Libs\Interop.GprPlataformaCOM900.dll" />
+    <Content Include="Libs\Interop.IAtpBS900.dll" />
+    <Content Include="Libs\Interop.IBasBS900.dll" />
+    <Content Include="Libs\Interop.ICblBS900.dll" />
+    <Content Include="Libs\Interop.ICnoBS900.dll" />
+    <Content Include="Libs\Interop.ICrmBS900.dll" />
+    <Content Include="Libs\Interop.IEapBS900.dll" />
+    <Content Include="Libs\Interop.IFacBS900.dll" />
+    <Content Include="Libs\Interop.IGabBS900.dll" />
+    <Content Include="Libs\Interop.IGcpBS900.dll" />
+    <Content Include="Libs\Interop.IGprBS900.dll" />
+    <Content Include="Libs\Interop.IModulosBS900.dll" />
+    <Content Include="Libs\Interop.IModulosDS900.dll" />
+    <Content Include="Libs\Interop.IPCMBS900.dll" />
+    <Content Include="Libs\Interop.IRhpBS900.dll" />
+    <Content Include="Libs\Interop.IStpBS900.dll" />
+    <Content Include="Libs\Interop.ITteBS900.dll" />
+    <Content Include="Libs\Interop.MSComCtl2.dll" />
+    <Content Include="Libs\Interop.MSScriptControl.dll" />
+    <Content Include="Libs\Interop.PbiBE900.dll" />
+    <Content Include="Libs\Interop.PbiBS900.dll" />
+    <Content Include="Libs\Interop.PCMBE900.dll" />
+    <Content Include="Libs\Interop.Primavera.BusinessData.ERPEngine900.dll" />
+    <Content Include="Libs\Interop.Primavera.Platform.Caching900.dll" />
+    <Content Include="Libs\Interop.PWSAlrExec900.dll" />
+    <Content Include="Libs\Interop.PWSBakExec900.dll" />
+    <Content Include="Libs\Interop.PWSEmlExec900.dll" />
+    <Content Include="Libs\Interop.PWSFilExec900.dll" />
+    <Content Include="Libs\Interop.PWSLicExec900.dll" />
+    <Content Include="Libs\Interop.PWSPanExec900.dll" />
+    <Content Include="Libs\Interop.PWSPbiExec900.dll" />
+    <Content Include="Libs\Interop.PWSProExec900.dll" />
+    <Content Include="Libs\Interop.PWSSmsExec900.dll" />
+    <Content Include="Libs\Interop.RhpBE900.dll" />
+    <Content Include="Libs\Interop.StdBackgrWorker900.dll" />
+    <Content Include="Libs\Interop.StdBE900.dll" />
+    <Content Include="Libs\Interop.StdBESql900.dll" />
+    <Content Include="Libs\Interop.StdBSSql900.dll" />
+    <Content Include="Libs\Interop.StdClasses900.dll" />
+    <Content Include="Libs\Interop.StdDS900.dll" />
+    <Content Include="Libs\Interop.StdDSSql900.dll" />
+    <Content Include="Libs\Interop.StdPlatBE900.dll" />
+    <Content Include="Libs\Interop.StdPlatBS900.dll" />
+    <Content Include="Libs\Interop.StdPlatDS900.dll" />
+    <Content Include="Libs\Interop.StdServices900.dll" />
+    <Content Include="Libs\Interop.StpBE900.dll" />
+    <Content Include="Libs\Interop.TteBE900.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
