@@ -3,3 +3,4 @@ C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\bin\Debug\BServi
 C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\bin\Debug\BServices.pdb
 C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.dll
 C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.pdb
+C:\Incentea\Source\IncenteaMz\Belutecnica\Belutecnica\BServices\obj\x86\Debug\BServices.csprojAssemblyReference.cache

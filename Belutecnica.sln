@@ -2,9 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belutecnica", "Belutecnica.csproj", "{E0E9F7FC-4831-494C-B52E-ED53655A7D63}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BServices", "BServices\BServices.csproj", "{C82654BD-BB51-4276-9956-551316A4D8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Belutecnica", "Belutecnica.csproj", "{E0E9F7FC-4831-494C-B52E-ED53655A7D63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,14 +12,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Debug|x86.ActiveCfg = Debug|x86
-		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Debug|x86.Build.0 = Debug|x86
-		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Release|x86.ActiveCfg = Release|x86
-		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Release|x86.Build.0 = Release|x86
 		{C82654BD-BB51-4276-9956-551316A4D8DF}.Debug|x86.ActiveCfg = Debug|x86
 		{C82654BD-BB51-4276-9956-551316A4D8DF}.Debug|x86.Build.0 = Debug|x86
 		{C82654BD-BB51-4276-9956-551316A4D8DF}.Release|x86.ActiveCfg = Release|x86
 		{C82654BD-BB51-4276-9956-551316A4D8DF}.Release|x86.Build.0 = Release|x86
+		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Debug|x86.ActiveCfg = Debug|x86
+		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Debug|x86.Build.0 = Debug|x86
+		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Release|x86.ActiveCfg = Release|x86
+		{E0E9F7FC-4831-494C-B52E-ED53655A7D63}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
